@@ -14,31 +14,33 @@ class Pen{
 class Student{
     String name;
     int age;
-    
+    int rollno;
+    float marks;
+
+    Student(String name, int age, int rollno,float marks){
+        this.name = name;
+        this.age = age;
+        this.rollno= rollno;
+        this.marks = marks;
+    }
     public void printInfo(){
         System.out.println(this.name);
         System.out.println(this.age);
-    }
-
-    
-    Student(Student s2){
-        this.name = s2.name;
-        this.age = s2.age;
-    }
-    Student(){
-
+        System.out.println(this.rollno);
+        System.out.println(this.marks);
     }
 }
 
-
 public class OOPS{
     public static void main(String args[]) {
-       Student s1 = new Student();
-       s1.name = "Neha";
-       s1.age = 22;
-
-       Student s2 = new Student(s1);
-       s2.printInfo();
+       Student s1 = new Student("Name",22,33,98.5f); // here Student() is a constructor 
+   
+     
+       s1.printInfo();
+      
+String a = "neha";
+String b = a;
+System.out.println(b);
        
     }
 
