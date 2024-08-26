@@ -1,3 +1,4 @@
+//#Lecture 1: Learned about classes, Objects, Constructors, this keyword.
 class Pen{
     String color;
     String type; //ballpoint,gel
@@ -34,14 +35,7 @@ class Student{
 public class OOPS{
     public static void main(String args[]) {
        Student s1 = new Student("Name",22,33,98.5f); // here Student() is a constructor 
-   
-     
        s1.printInfo();
-      
-String a = "neha";
-String b = a;
-System.out.println(b);
-       
     }
 
 }
