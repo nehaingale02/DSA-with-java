@@ -19,8 +19,9 @@ public class SearchIn2DArray {
             for(int col = 0; col < arr[row].length; col++){
                 int element = arr[row][col];
                 if(element == target){
-                    return  new int[] {row ,col};
-                }
+                    return  new int[] {row ,col};// here object is created to return array using new keyword
+                }                                // alternative: int[] result = {row, col};
+                                                 //              return result;
             }
 
         }
