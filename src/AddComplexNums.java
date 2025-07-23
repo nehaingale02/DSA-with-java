@@ -10,8 +10,8 @@ public class AddComplexNums {
 
         //this is a Constructor;initialised when obj is created i.enew complex number is created
         public Complex(int r, int i) {
-            this.real = r;
-            this.imag = i;
+            real = r;
+            imag = i;
         }
 
         //function to add complex numbers
