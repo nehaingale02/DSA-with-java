@@ -8,11 +8,11 @@ public class selectionsort {
 
     public static void main(String[] args) {
         int arr[] = {5,4,3,1,2};
-        selectionsort(arr);
+        selectionsortarr(arr);
         System.out.println(Arrays.toString(arr));
     }
 
-    static void selectionsort(int arr[]){
+    static void selectionsortarr(int arr[]){
         for(int i = 0; i <= arr.length - 1; i++){
             int last = arr.length - i - 1;
             int max = getMaxIndex(arr,0,last);
@@ -22,7 +22,7 @@ public class selectionsort {
             arr[max] = temp;
             }
 
-        // FOR LOOP find min index and swap with respective first index
+        // FOR LOOP find min index and swap ith respective first index
 
 //        for(int i = 0; i <= arr.length - 1; i++){
 //            int first = i;
