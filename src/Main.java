@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import java.util.ArrayList;
 
 /* https://www.geeksforgeeks.org/java/strings-in-java/
@@ -11,6 +11,10 @@ In Java, a String is the type of object that can store a sequence of characters
 */
 public class Main {
     public static void main(String[] args) {
+        int arr[] = {1,2,3,4,5,6} ;
+        int target = 4;
+        int ans= linearsearch(arr, target); // fuction call where passing array and target element to be found
+        System.out.println(ans);
         /*String literal storage:
         Whenever a String Object is created as a literal, the object will be created in the String constant pool.
         This allows JVM to optimize the initialization of String literal. The string constant pool is present in the heap.*/
@@ -46,54 +50,46 @@ public class Main {
         // condition:  is it should least have 1 string object
         System.out.println(new ArrayList<>() + "" +new Integer(34));
         }
-    }
-=======
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        int arr[] = {1,2,3,4,5,6} ;
-        int target = 4;
-        int ans= linearsearch(arr, target); // fuction call where passing array and target element to be found
-        System.out.println(ans);
-        }
 
-        // search the target and return the element
-        static int linearsearch2(int arr[], int target){
-
-            if(arr.length == 0){
-                return -1;
-            }
-
-            for (int element : arr) {
-                //check for element at each index  if it is = target
-                if (element == target) {
-                    return element;
-                }
-            }
-            // this line will hit when above return statement is not executed and
-            // hence the target not found
-            return -1;
-        }
-
-        // search in the array: return the index if element found
-        static int linearsearch(int arr[], int target){
+    static int linearsearch2(int arr[], int target){
 
         if(arr.length == 0){
             return -1;
-}
-
-            for (int index = 0 ; index < arr.length ; index++){
-                int element = arr[index];
-                //check for element at each index  if it is = target
-                if(element == target){
-                    return index;
-                }
-            }
-            // this line will hit when above return statement is not executed and
-            // hence the target not found
-            return -1;
         }
+
+        for (int element : arr) {
+            //check for element at each index  if it is = target
+            if (element == target) {
+                return element;
+            }
+        }
+        // this line will hit when above return statement is not executed and
+        // hence the target not found
+        return -1;
     }
 
->>>>>>> 3e97fcd08524253e6bf3f0190c020343323ec436
+    // search in the array: return the index if element found
+    static int linearsearch(int arr[], int target){
+
+        if(arr.length == 0){
+            return -1;
+        }
+
+        for (int index = 0 ; index < arr.length ; index++){
+            int element = arr[index];
+            //check for element at each index  if it is = target
+            if(element == target){
+                return index;
+            }
+        }
+        // this line will hit when above return statement is not executed and
+        // hence the target not found
+        return -1;
+    }
+    }
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+
+
