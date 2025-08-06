@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/String.iml" filepath="$PROJECT_DIR$/String.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/linearsearch.iml" filepath="$PROJECT_DIR$/linearsearch.iml" />
->>>>>>> 3e97fcd08524253e6bf3f0190c020343323ec436
-    </modules>
-  </component>
+    <component name="ProjectModuleManager">
+        <modules>
+            <module fileurl="file://$PROJECT_DIR$/String.iml" filepath="$PROJECT_DIR$/String.iml" />
+            <module fileurl="file://$PROJECT_DIR$/linearsearch.iml" filepath="$PROJECT_DIR$/linearsearch.iml" />
+        </modules>
+    </component>
 </project>
+
